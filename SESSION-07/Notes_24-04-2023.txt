@@ -1,0 +1,127 @@
+TABLES
+------
+1. TABLES ARE IN FORM OF ROWS AND COLUMNS 
+EG: CUSTOMERS , LOCATIONS 
+
+2.TABLES LOCATED IN SCHEMA 
+
+3. SCHEMA LOCATED IN DATABASE
+
+4. TABLES WILL NOT HAVE EXTENSIONS 
+
+
+FILES 
+------
+1.FILES WILL NOT HAVE ROWS AND COLUMNS 
+PPT FILE
+WORD FILE
+PDF FILE
+IMAGE FILE
+EXECUTABLE FILE
+
+2. FILES LOCATED INTO DIRECTORIES(FOLDERS)
+
+3. DIRECTORIES OR FOLDERS LOCATED IN FILE SERVER( OPERATING SYSTEM)
+
+4. FILES WILL HAVE EXTENSIONS.
+	EG : FILE1.txt , abc.jpg , File2.exe 
+	     file3.pdf
+	Files will be having size  1KB , 1MB , 1GB
+
+
+-------------------------------------------------------------------
+
+TYPES OF FILES :
+
+1. STRUCTURED FILES  (FLAT FILES /DATA FILES )
+2. SEMI STRUCTURED FILES ( XML FILES / HTML FILES)
+3. UN STRUCTURED FILES  ( IMAGE FILES , AUDIO FILES ,VIDEO FILES , WORD , PDF FILES)
+
+
+by using informatica , we will deal 90% FLAT FILES /DATA FILES
+                                    10% XML FILES / HTML FILES
+
+
+FLAT FILES / DATA FILES.
+
+IF THE DATA COMING IN THE FORMAT OF FILE - FLAT FILE /DATA FILE.
+
+TWO TYLES OF FLAT FILES :
+
+FIXED WIDTH FLATFILE.
+DELIMITED   FLATFILE.
+
+
+
+DELIMETERS USED MOST IN REALTIME.
+,   |  ~(TILD) ^(CAP/CARROT) ;
+
+
+most used FLAT FILE types in realtime.
+
+.txt (text file)  - 		,   |  ~(TILD) ^(CAP/CARROT) ;
+.dat  (data file) - 		,   |  ~(TILD) ^(CAP/CARROT) ;
+.out  (output file) -  		,   |  ~(TILD) ^(CAP/CARROT) ;
+.csv  (comma seperated value file)  -    ,
+
+
+flat file/ data files present in informatica server location.
+
+D:\Informatica\server\infa_shared\SrcFiles
+
+
+SOURCE FILE PROPRTIES IN SESSION:
+Source file directory  =  $PMSourceFileDir\
+
+$PMSourceFileDir\ = D:\Informatica\server\infa_shared\SrcFiles
+
+TARGET FILE PROPERTIES IN SESSION:
+1. Header Options 				 : Output Field Names
+2. Output file directory		 : $PMTargetFileDir\
+$PMTargetFileDir\ =  D:\Informatica\server\infa_shared\TgtFiles
+
+3.Output filename  = 
+
+
+
+
+source is a table - just import 
+
+source is a file - import the file , and give the maximum length to data types.
+
+
+
+Target is table  -  1.create a table in orcle - import it to target deisner
+                    2.just drag source to Target designer. rename it 
+					  Generate and execute 
+					  
+Target is file  - Drag the source to target , Rename it , change it file 
+                   change the delimiter .
+
+
+if you want to delete any source , target , mapping , session , workflow ,
+Rename - save - delete and then save.
+
+
+
+
+IN OPERATOR 
+-------------------------------------
+ORACLE :  PRODUCT_ID IN (50,150,200,228);
+
+iNFORMATICA : IN (PRODUCT_ID, 50,150,200,228)
+----------------------------------------------
+
+
+how to import the target table in informatica .
+
+method 1:
+1. create a target table in target shcmea in oracle sql developer
+2. import this target table from informaitca target designer by target odbc connection.
+
+Method 2:
+
+
+
+
+
